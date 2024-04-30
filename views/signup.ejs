@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CollaBoard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  </head>
+
+  <body>
+ 
+
+    <section class="vh-100" style="background-color: #eee;">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-12 col-xl-11">
+            <div class="card text-black" style="border-radius: 25px;">
+              <div class="card-body p-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+    
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+                    <% if(action == 'signup') { %>
+    
+                    <form class="mx-1 mx-md-4" method = 'post' action = ''>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputrole"  name = "inputrole" class="form-control" />
+                          <label class="form-label" for="inputrole">Role</label>
+                        </div>
+                      </div>
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputname" name = "inputname" class="form-control" />
+                          <label class="form-label" for="inputname">Your Name</label>
+                        </div>
+                      </div>
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="email" id="inputemail" name = "inputemail" class="form-control" />
+                          <label class="form-label" for="inputemail">Your Email</label>
+                        </div>
+                      </div>
+    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="password" id="inputpassword" name = "inputpassword" class="form-control" />
+                          <label class="form-label" for="inputpassword">Password</label>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputgender" name = "inputgender" class="form-control" />
+                          <label class="form-label" for="inputgender">Gender</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputDOB" name = "inputDOB" class="form-control" />
+                          <label class="form-label" for="inputDOB">Date of Birth</label>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="numbers" id="inputSalary" name = "inputSalary" class="form-control" />
+                          <label class="form-label" for="inputSalary">Salary</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputDate" name = "inputDate" class="form-control" />
+                          <label class="form-label" for="inputDate">Join Date</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputaddress" name = "inputaddress" class="form-control" />
+                          <label class="form-label" for="inputaddress">Address</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputcity" name = "inputcity" class="form-control" />
+                          <label class="form-label" for="inputcity">City</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="numbers" id="inputphone" name = "inputphone" class="form-control" />
+                          <label class="form-label" for="inputphone">Phone #</label>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputCountry" name = "inputCountry" class="form-control" />
+                          <label class="form-label" for="inputCountry">Country</label>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="number" id="inputzip" name = "inputzip" class="form-control" />
+                          <label class="form-label" for="inputzip">Zip Code</label>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="inputdegree" name = "inputdegree" class="form-control" />
+                          <label class="form-label" for="inputdegree">EmployeeDegree</label>
+                        </div>
+                      </div>
+
+
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c"/>
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements.
+                      </label>
+                      <br><br>
+                      <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+             
+                        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                      </div>
+    
+                    </form>
+                    
+                    <% } %>
+    
+                  </div>
+                  <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+    
+                    <img src="images/AI.png"
+                      class="img-fluid" alt="Sample image">
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+</html>
